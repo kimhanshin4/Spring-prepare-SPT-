@@ -22,7 +22,7 @@ public class RequestController {
 
     // [Request sample]
     // GET http://localhost:8080/hello/request/star/Robbie/age/95
-    @GetMapping("/OhMyGod/{name}/age/{age}") // {필드변수}, 필드클래스명, {필드변수}
+    @GetMapping("/star/{name}/age/{age}") // {필드변수}, 필드클래스명, {필드변수}
     @ResponseBody
     public String helloRequestPath(
         @PathVariable String name, @PathVariable int age) {// 위의 {name}, {age} 부분을 매개인자로 받음
